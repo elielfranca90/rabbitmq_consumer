@@ -12,8 +12,8 @@ namespace rabbitMQ.consumer
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "10.0.0.225",
-                Port = AmqpTcpEndpoint.UseDefaultPort,
+                HostName = "localhost",
+                Port = AmqpTcpEndpoint.UseDefaultPort, //:DefaultPort 5672
                 UserName = "guest",
                 Password = "guest"
             };

@@ -14,8 +14,6 @@ namespace rabbitMQ.consumer
                 RBMQConnection rBMQConnection = new RBMQConnection();
 
                 var product = new Product();
-                var acessHistory = new AcessHistory();
-
                 var factory = rBMQConnection.RMQ_NewConnection();
 
                 using (var connection = factory.CreateConnection())
@@ -92,7 +90,7 @@ namespace rabbitMQ.consumer
                 RBMQConnection rBMQConnection = new RBMQConnection();
 
                 var product = new Product();
-                var acessHistory = new AcessHistory();
+                //var acessHistory = new AcessHistory();
 
                 var factory = rBMQConnection.RMQ_NewConnection();
 
@@ -121,7 +119,11 @@ namespace rabbitMQ.consumer
                     //channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 
                     Console.WriteLine("Aguardando mensagem...");
-                    BuildAndRunConsumerForAcessHistory(channel, acessHistory);
+                    BuildAndRunConsumerForAcessHistory(channel, new AcessHistory("39104545850",
+                                                                                acessHistDate: DateTime.Now.ToShortDateString(), 
+                                                                                acessHistHour: DateTime.Now.ToShortTimeString(), 
+                                                                                acessHistTotalProductsSent: 1, 
+                                                                                acessHistTotalProductsReceived: 1));
 
                     //Console.WriteLine(" Press [enter] to exit.");
                     //Console.ReadLine();

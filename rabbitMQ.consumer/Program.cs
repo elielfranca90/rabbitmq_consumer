@@ -10,11 +10,13 @@ namespace rabbitMQ.consumer
 
             while (true)
             {
-                mQ.ConsumeQueue_ProdClient();
+                //mQ.ConsumeQueue_ProdClient();
 
                 mQ.ConsumeQueue_HistAcess();
 
-                Thread.Sleep(1000);
+                Thread.Sleep(1500);
+
+                System.Console.WriteLine("Estou girando !!!!");
             }
         }
     }
