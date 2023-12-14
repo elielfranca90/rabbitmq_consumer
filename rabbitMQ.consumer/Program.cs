@@ -6,17 +6,11 @@ namespace rabbitMQ.consumer
     {
         static void Main(string[] args)
         {
-            RabbitMQ mQ = new RabbitMQ();
-
             while (true)
             {
-                //mQ.ConsumeQueue_ProdClient();
+                RabbitMQ.BuildAndRunConsumerForAcessHistory();
 
-                mQ.ConsumeQueue_HistAcess();
-
-                Thread.Sleep(1500);
-
-                System.Console.WriteLine("Estou girando !!!!");
+                Thread.Sleep(1000);
             }
         }
     }
