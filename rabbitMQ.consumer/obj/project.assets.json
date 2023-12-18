@@ -172,11 +172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/elielfranca90/Dados/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/rabbitMQ.consumer.csproj",
+      "projectUniqueName": "/media/elielfranca90/Dados1/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/rabbitMQ.consumer.csproj",
       "projectName": "rabbitMQ.consumer",
-      "projectPath": "/media/elielfranca90/Dados/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/rabbitMQ.consumer.csproj",
+      "projectPath": "/media/elielfranca90/Dados1/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/rabbitMQ.consumer.csproj",
       "packagesPath": "/home/elielfranca90/.nuget/packages/",
-      "outputPath": "/media/elielfranca90/Dados/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/obj/",
+      "outputPath": "/media/elielfranca90/Dados1/eliel-2024/dev/rabbitmq_consumer/rabbitMQ.consumer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/elielfranca90/.nuget/NuGet/NuGet.Config"
